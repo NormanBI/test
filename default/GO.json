@@ -425,6 +425,61 @@
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
+        "artifact" : "nifi-stateful-analysis-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.9.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "b7c07830-47be-3ea5-b5ba-8de227862b05",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "AttributeRollingWindow",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 373.5,
+        "y" : 66.5
+      },
+      "properties" : { },
+      "propertyDescriptors" : {
+        "Subwindow Length" : {
+          "displayName" : "Subwindow Length",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Subwindow Length",
+          "sensitive" : false
+        },
+        "Value to Track" : {
+          "displayName" : "Value to Track",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Value to Track",
+          "sensitive" : false
+        },
+        "Time Window" : {
+          "displayName" : "Time Window",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Time Window",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.stateful.analysis.AttributeRollingWindow",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
         "artifact" : "nifi-standard-nar",
         "group" : "org.apache.nifi",
         "version" : "2.9.0"
@@ -585,6 +640,6 @@
   "snapshotMetadata" : {
     "author" : "b857dd2f-3ddf-431d-ad1a-08b2119d5dcc",
     "flowIdentifier" : "GO",
-    "timestamp" : 1785630220323
+    "timestamp" : 1785630276185
   }
 }
